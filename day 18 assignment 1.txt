@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+   int n, t, r, rev = 0;
+   printf("enter a number:");
+   scanf("%d", &n);
+   t = n;
+   while ( t > 0)
+   {
+      r = t %10;
+      rev = rev *10+ r;
+      t = t /10;
+   }
+   printf("reversed number is = %d/n", rev);
+   if ( n == rev )
+      printf("%d/n is Palindrome Number", n);
+   else
+      printf("%d/n is not the Palindrome Number", n);
+   return 0;
+}
